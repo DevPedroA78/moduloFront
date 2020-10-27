@@ -57,6 +57,6 @@ a {
 
 #toggle-menu:checked ~ .menu {
     /*display: block;*/
-    height: auto;
+    height: 300px;
 }
 

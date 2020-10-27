@@ -1,0 +1,66 @@
+*{
+    color: purple;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  soy un comentario */
+
+.bg-gray{
+    background-color: gray;
+}
+
+#section{
+    height: 200px;
+    border: 1px solid black;
+    width: 500px;
+}
+
+header{
+    background-color: cyan;
+    /* border 1px solid red; */
+    border-radius: 5px;
+
+}
+
+
+
+
+p {
+    color: pink;
+}   
+
+
+.cotenedor-padre {
+    width: 600px;
+    height: 400px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #333;
+}
+
+.square.gray {
+    background-color: gray;
+}
+
+.square.pink {
+    background-color: pink;
+}
+
+.square.tomato {
+    background-color: tomato;
+}
+
+.square.yellow {
+    background-color: cyan;
+}
+
+.square.yellow {
+    background-color: yellow;
+}
