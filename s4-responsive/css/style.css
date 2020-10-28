@@ -15,10 +15,21 @@
     padding: 0 25px;
     border: 5px solid orange;
     background-color: white;
+    /*Se aplica Transition para pasar de un item a otro de forma sutil*/
+    transition: 0.5s;
 }
 
 /*Breakpoint Medium para cambio responsive de items en tablet*/
 @media screen and (min-width: 768px){
+
+    .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            align-content: stretch;
+    }
 
     .square.item1 {
         width: 200px;
