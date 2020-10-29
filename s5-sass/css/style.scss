@@ -1,0 +1,105 @@
+$color-primary: #00a3ff;
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #ccc;
+$pink: pink;
+$gradient-1: rgb(77, 73, 73);
+$gradient-2: rgb(179, 76, 76);
+$shadow: rgb(24, 14, 14, 0.5);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@mixin styleButton {
+    height: 50px;
+    width: 100px;
+    background-color: $color-primary;
+    border: none;
+    border-radius: 50px;
+    color: $pink;
+}
+
+@mixin styleInput {
+    height: 50px;
+    border: 1px solid purple;
+    
+}
+
+.container-flex {
+    background-color: $color-gray;
+
+    .square {
+        color: $color-white;
+        background-color: $color-primary;
+        
+        &.item-1{
+            color: $color-primary;
+        }
+        p.text-white {
+            color: $pink;
+        }
+    }
+}
+
+
+// En CSS .container.item-1 -> En SaSS &.item-1{color: $color-primary;}
+
+// Selectores: Universal, tagname, class, id
+// Id -> #
+// Selector por atributo
+// Selector de subsecuente "hermano" se define con + -> Selector + Selector -> article + section
+// Selector de hermano ~ -> Selector ~Selector -> .form ~ p.text-white
+// Selector de hijos director > -> Selector > Selector -> .form > div.form-group
+// Selector descendiente -> Selector _espacio_ Selector -> .form div.form-group Agarra a todos los DIV
+
+// .square .item -> Descendiente, todos los Item que esten dentro de Square.
+// .square.item  -> Todos los elemsntos con Item y con Square.
+
+form.form {
+    border: 1px solid $color-gray;
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        input {
+            height: 50px;
+            border: 1px solid $color-gray;
+            border-radius: 5px;
+        }
+
+        button.btn {
+            height: 50px;
+            background-color: $color-primary;
+            border: none;
+            border-radius: 5px;
+            color: $color-white;
+        }
+    }
+}
+
+button.btn-send {
+    @include styleButton()
+}
+
+.btn {
+    border: none;
+    border-radius: 50px;
+    color: $color-white;
+
+    &.other-class {
+
+    }
+
+    &:hover {
+        border-color: $color-gray;
+    }
+}

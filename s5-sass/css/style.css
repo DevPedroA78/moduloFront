@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container-flex {
+  background-color: #ccc;
+}
+
+.container-flex .square {
+  color: #fff;
+  background-color: #00a3ff;
+}
+
+.container-flex .square.item-1 {
+  color: #00a3ff;
+}
+
+.container-flex .square p.text-white {
+  color: pink;
+}
+
+form.form {
+  border: 1px solid #ccc;
+  width: 70%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form.form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 15px;
+}
+
+form.form .form-group input {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form.form .form-group button.btn {
+  height: 50px;
+  background-color: #00a3ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+button.btn-send {
+  height: 50px;
+  width: 100px;
+  background-color: #00a3ff;
+  border: none;
+  border-radius: 50px;
+  color: pink;
+}
+/*# sourceMappingURL=style.css.map */
